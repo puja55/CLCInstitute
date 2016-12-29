@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="67dp"
+    android:layout_height="64dp"
+    android:background="@drawable/calendar_cell"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="2dip" >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000D7"
+        android:textSize="14sp"
+        android:text=" "
+        android:textStyle="bold"/>
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:text=""
+        android:textStyle="normal" >
+    </TextView>
+
+</LinearLayout>

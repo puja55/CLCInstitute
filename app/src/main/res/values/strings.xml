@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CLC</string>
+    <string name="viewall"><u>View All</u></string>
+
+    <string name="exit">Click OK to exit application!</string>
+    <string name="check_internet">Please Check Your Internet</string>
+</resources>

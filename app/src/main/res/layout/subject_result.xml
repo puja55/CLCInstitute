@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cpv_animAutostart="true"
+            android:layout_gravity="center"
+            app:cpv_indeterminate="true"
+            app:cpv_color="@color/blue"/></LinearLayout>
+
+ <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:scrollbars="vertical"
+    android:background="#F5F5F5"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:id="@+id/ll_top"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#F5F5F5">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:elevation="5sp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Neg. Marks"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_negmarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Physics MM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_tv_phymm"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Physics OM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_phyom"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Chemistry MM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_chemm"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Chemistry OM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_cheom"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabl_math_MM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Maths MM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_mathmm"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tabl_math_OM"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Maths OM"
+                    android:textColor="@color/blue" />
+
+
+                <TextView
+                    android:id="@+id/tv_mathom"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tabl_bot_MM"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Botney MM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_botmm"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tabl_bot_OM"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Botney OM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_botom"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tabl_ZOO_MM"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Zoology MM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_zoomm"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tabl_zoo_OM"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Zoology OM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_zooom"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Total Marks"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_totmm"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Total OM"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_totom"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="%age"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_per"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:elevation="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Rank"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_rank"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textColor="@color/black" />
+            </TableRow>
+
+
+
+
+        </TableLayout></LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView></LinearLayout>

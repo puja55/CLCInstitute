@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:background="@drawable/back1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15sp">
+
+                <TextView
+                    android:id="@+id/result_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USER NAME"
+                    android:textColor="@color/caldroid_white"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="3sp"
+                    android:textStyle="bold"/>
+                <View android:layout_width="110dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/gradient"
+                    android:layout_below="@+id/student_name"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="3sp"
+                    android:text="TEST-RESULT"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/profile_back"
+
+                android:padding="5dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/result_profileimg"
+
+
+                    /></RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:id="@+id/ll_top"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#D5D5D5"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="NAME"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    />
+
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#aaaaaa" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="DATE"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#aaaaaa" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="EXAM"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+
+        </LinearLayout>
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#aaaaaa" />
+
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerview"
+            android:layout_marginTop="2dp"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"
+            app:cpv_color="@color/blue"/></LinearLayout>
+
+</LinearLayout>

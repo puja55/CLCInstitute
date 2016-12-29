@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/caldroid_white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:background="@drawable/back1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15sp">
+
+                <TextView
+                    android:id="@+id/std_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USER NAME"
+                    android:textColor="@color/caldroid_white"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="3sp"
+                    android:textStyle="bold"/>
+                <View android:layout_width="110dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/gradient"
+                    android:layout_below="@+id/student_name"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="3sp"
+                    android:text="FEEDBACK"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/profile_back"
+
+                android:padding="5dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/feedbck_profileimg"
+
+
+                    /></RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/logo_clc"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="50sp"-->
+    <!--/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:textColorHint="@color/blue">
+        <EditText
+            android:id="@+id/feedback_stuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Student ID"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:textColorHint="@color/blue">
+        <EditText
+            android:id="@+id/feedback_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:textColorHint="@color/blue">
+        <EditText
+            android:id="@+id/feedback_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Mobile"
+            android:inputType="number"
+            android:textColor="@color/black"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp"
+        android:textColorHint="@color/blue">
+        <EditText
+            android:id="@+id/feedback_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:inputType="text"
+            android:textColor="@color/black"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:src="@drawable/btn_selector"
+            android:background="@color/blue"
+            android:text="Submit"
+            android:id="@+id/feedback_submit"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

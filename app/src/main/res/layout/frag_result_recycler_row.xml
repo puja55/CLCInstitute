@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:padding="10sp"
+        android:text=""
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:padding="10sp"
+        android:text="19/06/2016"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/texam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:padding="10sp"
+        android:text="JEE Advanced"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="#000" />
+
+</LinearLayout>

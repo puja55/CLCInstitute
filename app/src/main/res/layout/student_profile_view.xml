@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F0F0F0"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120sp"
+                    android:background="@drawable/back1"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15sp">
+
+                    <TextView
+                        android:id="@+id/student_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USER NAME"
+                        android:textColor="@color/caldroid_white"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="3sp"
+                        android:textStyle="bold"/>
+                    <View android:layout_width="110dp"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/gradient"
+                        android:layout_below="@+id/student_name"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="@color/yellow"
+                        android:layout_marginTop="3sp"
+                        android:text="FORM NO"/>
+                    <TextView
+                        android:id="@+id/tv_form_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="@color/white"
+                        android:layout_marginTop="3sp"
+                        android:text=" "/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/profile_back"
+
+                    android:padding="5dp"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/user_profileimg"
+
+
+                        /></RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120sp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:background="@drawable/back1">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_profile"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:background="@drawable/profile_back"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:padding="5dp"-->
+                <!--&gt;-->
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/user_profileimg"-->
+                <!--android:layout_alignParentRight="true"-->
+
+                <!--/></RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="15sp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/result_username"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="USER NAME"-->
+                    <!--android:textColor="@color/caldroid_white"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginBottom="3sp"-->
+                    <!--android:textStyle="bold"/>-->
+                <!--<View android:layout_width="110dp"-->
+                    <!--android:layout_height="2dp"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:background="@drawable/gradient"-->
+                    <!--android:layout_below="@+id/student_name"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_gravity="center_vertical"-->
+
+                    <!--android:textColor="@color/yellow"-->
+                    <!--android:layout_marginTop="3sp"-->
+                    <!--android:text="TEST-RESULT"/>-->
+
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+
+<!--</LinearLayout>-->
+
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="FATHER'S NAME"
+                android:textStyle="normal"
+                android:layout_weight="0.2"
+                android:textSize="13dp"
+                android:textColor="#232323"
+
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_fathersname"
+                android:layout_width="wrap_content"
+                android:text="SHRI KRISHNA LAL GUJAR"
+                android:textStyle="normal"
+                android:textSize="11dp"
+                android:textColor="#6F6F6F"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="MOBILE NO."
+                android:textStyle="normal"
+                android:layout_weight="0.2"
+                android:textSize="13dp"
+
+                android:textColor="#232323"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_mob_no"
+
+                android:layout_width="wrap_content"
+                android:text="+91-9876543210"
+                android:textStyle="normal"
+                android:textSize="11dp"
+                android:layout_weight="1"
+                android:textColor="#6F6F6F"
+                android:gravity="start"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="LOCATION"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:textColor="#232323"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+
+                android:layout_width="228dp"
+                android:text="Village:- SAINTHAL, Post: SAINTHAL, Tehsil: DAUSA, District: DAUSA, State: Rajasthan, PIN Code:"
+                android:textStyle="normal"
+                android:textSize="11dp"
+                android:maxLines="3"
+                android:textColor="#6F6F6F"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_location" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="COURSE NAME"
+                android:textStyle="normal"
+                android:layout_weight="0.2"
+                android:textSize="13dp"
+                android:textColor="#232323"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_course_name"
+
+                android:layout_width="wrap_content"
+                android:text="JEE ADVANCE"
+                android:textStyle="normal"
+                android:textSize="11dp"
+                android:gravity="start"
+                android:textColor="#6F6F6F"
+
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="GENDER"
+                android:textStyle="normal"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:textColor="#232323"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_gender"
+
+                android:layout_width="wrap_content"
+                android:text="MALE"
+                android:textStyle="normal"
+                android:textSize="11dp"
+                android:textColor="#6F6F6F"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="#FFFFFF"
+android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="DOB"
+                android:textStyle="normal"
+                android:textColor="#232323"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_dob"
+
+                android:layout_width="wrap_content"
+                android:text="22-10-1999"
+                android:textStyle="normal"
+                android:textSize="11dp"
+                android:textColor="#6F6F6F"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="#F5F5F5">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+
+                android:elevation="5sp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+
+                    android:elevation="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="0"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="5sp"
+                        android:text="FATHER'S NAME"
+                        android:textSize="13dp"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:textSize="13dp"
+                        android:id="@+id/tv_fathersname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="8sp"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+
+                    android:elevation="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="0"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="5sp"
+                        android:text="MOBILE NO."
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tv_mob_no"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="8sp"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="2dp"
+                    android:elevation="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="5sp"
+                        android:text="LOCATION"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:paddingLeft="8sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+
+                        android:text=""
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+
+                    android:elevation="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="5sp"
+                        android:text="COURSE NAME"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tv_course_name"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="8sp"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:elevation="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="5sp"
+                        android:text="GENDER"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="8sp"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabl_math_MM"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:elevation="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="5sp"
+                        android:text="DOB"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/tv_dob"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center|start"
+                        android:paddingLeft="8sp"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+
+
+            </TableLayout></LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_gif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center">
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cpv_animAutostart="true"
+                app:cpv_indeterminate="true"
+                app:cpv_color="@color/blue"/></LinearLayout>
+
+    </LinearLayout>
+   </android.support.design.widget.CoordinatorLayout>
